@@ -1,0 +1,36 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  annotations:
+    client.knative.dev/user-image: gcr.io/tabulator-emckac/tabulator
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+  labels:
+    cloud.googleapis.com/location: us-central1
+  name: tabulator
+  namespace: '865324926937'
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: '100'
+        client.knative.dev/user-image: gcr.io/tabulator-emckac/tabulator
+        run.googleapis.com/client-name: gcloud
+        run.googleapis.com/client-version: 338.0.0
+        run.googleapis.com/sandbox: gvisor
+      name: tabulator-00041-rup
+    spec:
+      containerConcurrency: 80
+      containers:
+      - image: gcr.io/tabulator-emckac/tabulator
+        ports:
+        - containerPort: 8080
+          name: http1
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 256Mi
+      timeoutSeconds: 300
+  traffic:
+  - latestRevision: true
+    percent: 100

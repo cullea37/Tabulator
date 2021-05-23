@@ -1,0 +1,16 @@
+{
+	"hosting": {
+	  "public" : "server/src/static",
+	  "ignore": [
+	    "firebase.json",
+	    "**/*",
+	    "**/node_modules/**"
+	  ],
+	  "rewrites" : [{
+	    "source" : "**",
+	    "run" : {
+	      "serviceId" : "tabulator1" 
+	    }
+	  }]
+	}
+}

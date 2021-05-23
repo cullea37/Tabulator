@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+body {
+  font-family: 'Lobster', cursive; margin: 0; padding: 0;
+  background-image: url("purplehat.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 30%;
+
+}
+
+.form {
+  display: inline;
+}
+
+.buttonLeft {
+  font-size: x-large;
+  display: inline;
+  width: 150px;
+  height: 75px;
+  background: #4E9CAF;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  font-family: 'Lobster', cursive;
+}
+
+.button {
+  font-size: x-large;
+  display: inline;
+  width: 150px;
+  height: 75px;
+  background: #4E9CAF;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  font-family: 'Lobster', cursive;
+  margin-left: 55%;
+}
+
+.buttonReturn {
+  font-size: x-large;
+  display: inline;
+  width: 150px;
+  height: 75px;
+  background: #4E9CAF;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  margin-left: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+}
+
+.upload-wrap {
+    position: relative;
+}
+
+.upload-btn {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    width: 150px;
+    height: 75px;
+
+}
+
+
+textarea {
+  resize: none;
+  overflow: auto;
+}

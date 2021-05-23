@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Tabulator</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" >
+  </head>
+  <body class = "full-screen flex-center">
+    <div id="main-div">
+    <h1 class="text-xl">Welcome to Tabulator </h1>
+
+    <h2>Turn video of guitar playing to tabs</h2>
+      <form method="post"action="{{ url_for('uploadVideo') }}" enctype="multipart/form-data" Content-Type= "multipart/form-data">
+        <div class="upload-wrap">
+            <button type="button" class="buttonLeft">Choose file</button>
+            <input type="file" accept=".mp4"  name="video" class="upload-btn"></>
+            <button type="submit" id="uploadBtn" class="button">Click to upload video</button>
+        </div>
+      </form>
+  </body>
+</html>
